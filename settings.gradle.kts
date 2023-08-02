@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "AppByPhilippLackner"
 include(":intent-and-intent-filter")
 include(":broadcast-and-broadcast-receiver")
+include(":foreground-services")
