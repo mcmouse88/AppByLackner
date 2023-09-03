@@ -40,6 +40,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.mcmouse88.note_app.R
+import com.mcmouse88.note_app.core.utils.TestTags
 import com.mcmouse88.note_app.feature_note.domain.model.Note
 import com.mcmouse88.note_app.feature_note.presentation.add_edit_note.components.TransparentHintTextField
 import com.mcmouse88.note_app.ui.components.CustomSnackbar
@@ -156,7 +157,8 @@ fun AddEditNoteScreen(
                 },
                 isHintVisible = titleState.isHintVisible,
                 singleLine = true,
-                textStyle = MaterialTheme.typography.headlineSmall
+                textStyle = MaterialTheme.typography.headlineSmall,
+                testTag = TestTags.TITLE_TEXT_FIELD
             )
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -171,7 +173,8 @@ fun AddEditNoteScreen(
                 },
                 isHintVisible = contentState.isHintVisible,
                 textStyle = MaterialTheme.typography.bodyLarge,
-                modifier = Modifier.fillMaxHeight()
+                modifier = Modifier.fillMaxHeight(),
+                testTag = TestTags.CONTENT_TEXT_FIELD
             )
         }
     }
