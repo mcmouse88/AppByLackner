@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 pluginManagement {
     repositories {
         google()
@@ -20,3 +22,4 @@ include(":foreground-services")
 include(":work-manager")
 include(":content-providers")
 include(":note-app")
+include(":room-transaction")
