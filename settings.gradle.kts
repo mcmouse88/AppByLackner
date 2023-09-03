@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":navigate-back-result")
+
+
 pluginManagement {
     repositories {
         google()
