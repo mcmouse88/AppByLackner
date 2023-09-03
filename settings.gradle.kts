@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":sharing-data-between-screens")
+
+
 include(":navigate-back-result")
 
 
