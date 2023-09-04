@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":shimmer-effect")
+
+
 include(":swipe-refresh")
 
 
