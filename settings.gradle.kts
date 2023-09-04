@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":image-slider")
+
+
 include(":sharing-data-between-screens")
 
 
