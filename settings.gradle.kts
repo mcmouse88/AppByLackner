@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":swipe-refresh")
+
+
 include(":image-slider")
 
 
