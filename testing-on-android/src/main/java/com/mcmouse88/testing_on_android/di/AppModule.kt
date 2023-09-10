@@ -7,6 +7,8 @@ import com.mcmouse88.testing_on_android.data.local.ShoppingItemDatabase
 import com.mcmouse88.testing_on_android.data.remote.PixabayApi
 import com.mcmouse88.testing_on_android.others.Constants.BASE_URL
 import com.mcmouse88.testing_on_android.others.Constants.DATABASE_NAME
+import com.mcmouse88.testing_on_android.repository.DefaultShoppingRepository
+import com.mcmouse88.testing_on_android.repository.ShoppingRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -40,4 +42,9 @@ class AppModule {
             .build()
             .create()
     }
+
+    @[Singleton Provides]
+    fun provideDefaultShoppingRepository(
+        defaultRepository: DefaultShoppingRepository
+    ): ShoppingRepository = defaultRepository
 }
