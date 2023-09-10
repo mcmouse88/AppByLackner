@@ -40,6 +40,7 @@ android {
 
 dependencies {
 
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
@@ -64,6 +65,9 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.2")
 
     // Navigation Components
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.2")
@@ -94,7 +98,7 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("com.google.truth:truth:1.1.3")
-    androidTestImplementation("com.linkedin.dexmaker:dexmaker-mockito:2.12.1")
+    androidTestImplementation("com.linkedin.dexmaker:dexmaker-mockito:2.28.3")
     androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.2")
     androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
     androidTestImplementation("org.mockito:mockito-core:4.11.0")
