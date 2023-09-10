@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":testing-on-android")
+
+
 include(":shimmer-effect")
 
 
