@@ -115,5 +115,5 @@ dependencies {
     androidTestImplementation("org.mockito:mockito-core:4.11.0")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.47")
     kspAndroidTest("com.google.dagger:hilt-android-compiler:2.47")
-
+    debugImplementation("androidx.fragment:fragment-testing:1.6.1")
 }
