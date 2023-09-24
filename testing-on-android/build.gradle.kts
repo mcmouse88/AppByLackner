@@ -19,7 +19,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.mcmouse88.testing_on_android.HiltTestRunner"
 
         val properties = Properties()
         properties.load(project.rootProject.file("local.properties").inputStream())
@@ -113,4 +113,7 @@ dependencies {
     androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.2")
     androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
     androidTestImplementation("org.mockito:mockito-core:4.11.0")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.47")
+    kspAndroidTest("com.google.dagger:hilt-android-compiler:2.47")
+
 }
