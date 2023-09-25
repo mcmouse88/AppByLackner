@@ -33,7 +33,7 @@ class AddShoppingItemFragmentTest {
     val taskExecutor = InstantTaskExecutorRule()
 
     @Inject
-    lateinit var fragmentFactory: ShoppingFragmentFactory
+    lateinit var fragmentFactory: TestShoppingFragmentFactory
 
     @Before
     fun setup() {

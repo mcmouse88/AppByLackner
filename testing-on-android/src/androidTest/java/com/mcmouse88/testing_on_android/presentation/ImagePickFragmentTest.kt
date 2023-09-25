@@ -33,7 +33,7 @@ class ImagePickFragmentTest {
     val hiltRule = HiltAndroidRule(this)
 
     @Inject
-    lateinit var fragmentFactory: ShoppingFragmentFactory
+    lateinit var fragmentFactory: TestShoppingFragmentFactory
 
     @Before
     fun setUp() {
