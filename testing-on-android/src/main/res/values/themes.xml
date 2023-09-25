@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TestingOnAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/PoppinsTextStyle</item>
+    </style>
+
+    <style name="Theme.TestingOnAndroid" parent="Base.Theme.TestingOnAndroid" />
+
+    <style name="PoppinsTextStyle" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

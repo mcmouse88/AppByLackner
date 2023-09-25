@@ -1,20 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":shimmer-effect")
-
-
-include(":swipe-refresh")
-
-
-include(":image-slider")
-
-
-include(":sharing-data-between-screens")
-
-
-include(":navigate-back-result")
-
-
 pluginManagement {
     repositories {
         google()
@@ -27,6 +12,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots/")}
     }
 }
 
@@ -38,3 +24,9 @@ include(":work-manager")
 include(":content-providers")
 include(":note-app")
 include(":room-transaction")
+include(":testing-on-android")
+include(":shimmer-effect")
+include(":swipe-refresh")
+include(":image-slider")
+include(":sharing-data-between-screens")
+include(":navigate-back-result")

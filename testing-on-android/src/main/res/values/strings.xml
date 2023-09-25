@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestingOnAndroid</string>
+    <string name="name">Name</string>
+    <string name="amount">Amount</string>
+    <string name="price_per_item">Price per Item</string>
+    <string name="add">Add</string>
+    <string name="search_for_images">Search for images …</string>
+    <string name="multiply_three">3x</string>
+    <string name="price_euro">Price: 3€</string>
+</resources>
