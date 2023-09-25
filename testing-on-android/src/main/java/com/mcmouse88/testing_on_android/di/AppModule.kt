@@ -2,6 +2,10 @@ package com.mcmouse88.testing_on_android.di
 
 import android.content.Context
 import androidx.room.Room
+import com.bumptech.glide.Glide
+import com.bumptech.glide.RequestManager
+import com.bumptech.glide.request.RequestOptions
+import com.mcmouse88.testing_on_android.R
 import com.mcmouse88.testing_on_android.data.local.ShoppingDao
 import com.mcmouse88.testing_on_android.data.local.ShoppingItemDatabase
 import com.mcmouse88.testing_on_android.data.remote.PixabayApi
@@ -20,7 +24,7 @@ import retrofit2.create
 import javax.inject.Singleton
 
 @[Module InstallIn(SingletonComponent::class)]
-class AppModule {
+object AppModule {
 
     @[Singleton Provides]
     fun provideShoppingItemDatabase(
@@ -47,4 +51,13 @@ class AppModule {
     fun provideDefaultShoppingRepository(
         defaultRepository: DefaultShoppingRepository
     ): ShoppingRepository = defaultRepository
+
+    @[Singleton Provides]
+    fun provideGlideInstance(
+        @ApplicationContext context: Context
+    ): RequestManager = Glide.with(context).setDefaultRequestOptions(
+        RequestOptions()
+            .placeholder(R.drawable.ic_image)
+            .error(R.drawable.ic_image)
+    )
 }

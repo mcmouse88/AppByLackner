@@ -4,7 +4,7 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.google.common.truth.Truth
 import com.mcmouse88.testing_on_android.others.Constants
 import com.mcmouse88.testing_on_android.others.Status
-import com.mcmouse88.testing_on_android.repository.FakeShoppingRepository
+import com.mcmouse88.testing_on_android.repository.FakeShoppingRepositoryAndroidTest
 import com.mcmouse88.testing_on_android.utils.MainCoroutineRule
 import com.mcmouse88.testing_on_android.utils.getOrAwaitValue
 import org.junit.Before
@@ -23,7 +23,7 @@ class ShoppingViewModelTest {
 
     @Before
     fun setUp() {
-        viewModel = ShoppingViewModel(FakeShoppingRepository())
+        viewModel = ShoppingViewModel(FakeShoppingRepositoryAndroidTest())
     }
 
     @Test
