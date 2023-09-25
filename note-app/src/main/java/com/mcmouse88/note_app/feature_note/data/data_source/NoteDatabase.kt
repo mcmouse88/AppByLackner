@@ -6,7 +6,8 @@ import com.mcmouse88.note_app.feature_note.data.models.NoteEntity
 
 @Database(
     entities = [NoteEntity::class],
-    version = 1
+    version = 1,
+    exportSchema = false
 )
 abstract class NoteDatabase : RoomDatabase() {
 

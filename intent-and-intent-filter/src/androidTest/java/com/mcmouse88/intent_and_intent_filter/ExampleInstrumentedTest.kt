@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.mcmouse88.appbyphilipplackner", appContext.packageName)
+        assertEquals("com.mcmouse88.intent_and_intent_filter", appContext.packageName)
     }
 }

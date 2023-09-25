@@ -7,7 +7,11 @@ import com.mcmouse88.room_transaction.database.attendee.AttendeeDao
 import com.mcmouse88.room_transaction.database.event.Event
 import com.mcmouse88.room_transaction.database.event.EventDao
 
-@Database(entities = [Event::class, Attendee::class], version = 1)
+@Database(
+    entities = [Event::class, Attendee::class],
+    version = 1,
+    exportSchema = false
+)
  abstract class AppDatabase : RoomDatabase() {
      abstract fun eventDao(): EventDao
      abstract fun attendeeDao(): AttendeeDao
