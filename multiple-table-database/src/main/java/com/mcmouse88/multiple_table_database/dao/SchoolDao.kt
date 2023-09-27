@@ -7,7 +7,9 @@ import androidx.room.Query
 import androidx.room.Transaction
 import com.mcmouse88.multiple_table_database.entities.Director
 import com.mcmouse88.multiple_table_database.entities.School
+import com.mcmouse88.multiple_table_database.entities.Student
 import com.mcmouse88.multiple_table_database.entities.relations.SchoolAndDirectorRelation
+import com.mcmouse88.multiple_table_database.entities.relations.SchoolWithStudents
 
 @Dao
 interface SchoolDao {
@@ -21,4 +23,11 @@ interface SchoolDao {
     @Transaction
     @Query("SELECT * FROM school_table WHERE school_name = :schoolName")
     suspend fun getSchoolAndDirectorWithSchoolName(schoolName: String): List<SchoolAndDirectorRelation>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertStudent(student: Student)
+
+    @Transaction
+    @Query("SELECT * FROM school_table WHERE school_name = :schoolName")
+    suspend fun getSchoolWithStudents(schoolName: String): List<SchoolWithStudents>
 }
