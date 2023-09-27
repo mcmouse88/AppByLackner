@@ -42,14 +42,13 @@ class MainActivity : ComponentActivity() {
         )
         setContent {
             ImageSliderTheme {
-                val pagerState = rememberPagerState()
+                val pagerState = rememberPagerState { imageList.size }
                 val scope = rememberCoroutineScope()
                 Box(modifier = Modifier.fillMaxSize()) {
                     HorizontalPager(
-                        pageCount = imageList.size,
+                        modifier = Modifier,
                         state = pagerState,
-                        key = { imageList[it] },
-                        // pageSize = PageSize.Fixed(300.dp) // Image displayed by width
+                        key = { imageList[it] }
                     ) { index ->
                         Image(
                             painter = painterResource(id = imageList[index]),
@@ -58,6 +57,7 @@ class MainActivity : ComponentActivity() {
                             modifier = Modifier.fillMaxSize()
                         )
                     }
+
                     Box(
                         modifier = Modifier
                             .offset(y = -(16).dp)
