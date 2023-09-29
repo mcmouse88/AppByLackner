@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RoomGuideFull</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="save">Save</string>
+</resources>
