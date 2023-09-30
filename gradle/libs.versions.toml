@@ -19,7 +19,7 @@ espressoVersion = "3.5.1"
 android-application = { id = "com.android.application", version = "8.1.1" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
 google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "daggerHiltVersion" }
-google-devtools-ksp = { id = "com.google.devtools.ksp", version = "1.9.0-1.0.13" }
+google-devtools-ksp = { id = "com.google.devtools.ksp", version = "1.9.10-1.0.13" }
 androidx-navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navVersion" }
 
 [libraries]
@@ -81,6 +81,7 @@ google-dagger-hilt-android-testing = { module = "com.google.dagger:hilt-android-
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomVersion" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }
+androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "roomVersion" }
 
 # Retrofit
 squareup-retrofit2 = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
