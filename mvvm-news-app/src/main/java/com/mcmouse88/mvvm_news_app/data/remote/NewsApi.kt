@@ -1,7 +1,7 @@
 package com.mcmouse88.mvvm_news_app.data.remote
 
 import com.mcmouse88.mvvm_news_app.BuildConfig
-import com.mcmouse88.mvvm_news_app.data.dto.NewsResponce
+import com.mcmouse88.mvvm_news_app.data.remote.dto.NewsResponseDto
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -16,7 +16,7 @@ interface NewsApi {
         pageNumber: Int = 1,
         @Query("apiKey")
         apiKey: String = BuildConfig.API_KEY
-    ): Response<NewsResponce>
+    ): Response<NewsResponseDto>
 
     @GET("v2/everything")
     suspend fun searchForNews(
@@ -26,5 +26,5 @@ interface NewsApi {
         pageNumber: Int = 1,
         @Query("apiKey")
         apiKey: String
-    ): Response<NewsResponce>
+    ): Response<NewsResponseDto>
 }
