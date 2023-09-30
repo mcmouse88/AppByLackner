@@ -18,7 +18,7 @@ data class ArticleEntity(
     val description: String,
     @ColumnInfo("published_at")
     val publishedAt: String,
-    val source: Source,
+    val source: SourceType,
     @ColumnInfo("title")
     val title: String,
     @ColumnInfo("url")
@@ -27,7 +27,7 @@ data class ArticleEntity(
     val urlToImage: String
 )
 
-data class Source(
+data class SourceType(
     val id: String,
     val name: String
 )
