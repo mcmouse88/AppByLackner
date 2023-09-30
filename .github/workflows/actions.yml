@@ -25,7 +25,10 @@ jobs:
       - name: Load API Token from secrets
         env:
           API_TOKEN: ${{ secrets.API_KEY }}
-        run: echo API_KEY=$API_KEY > ./local.properties
+          NEWS_TOKEN: ${{ secrets.NEWS_API_KEY }}
+        run: |
+          echo API_KEY=$API_KEY > ./local.properties
+          echo NEWS_API_KEY=$NEWS_API_KEY >> ./local.properties
 
       - uses: actions/cache@v2
         with:
@@ -52,8 +55,11 @@ jobs:
 
       - name: Load API Token from secrets
         env:
-          API_TOKEN: ${{ secrets.API_OTKEN }}
-        run: echo API_KEY=$API_KEY > ./local.properties
+          API_TOKEN: ${{ secrets.API_KEY }}
+          NEWS_TOKEN: ${{ secrets.NEWS_API_KEY }}
+        run: |
+          echo API_KEY=$API_KEY > ./local.properties
+          echo NEWS_API_KEY=$NEWS_API_KEY >> ./local.properties
 
       - uses: actions/cache@v2
         with:
@@ -82,8 +88,11 @@ jobs:
 
       - name: Load API Token from secrets
         env:
-          API_TOKEN: ${{ secrets.API_OTKEN }}
-        run: echo API_KEY=$API_KEY > ./local.properties
+          API_TOKEN: ${{ secrets.API_KEY }}
+          NEWS_TOKEN: ${{ secrets.NEWS_API_KEY }}
+        run: |
+          echo API_KEY=$API_KEY > ./local.properties
+          echo NEWS_API_KEY=$NEWS_API_KEY >> ./local.properties
 
       - uses: actions/cache@v2
         with:
