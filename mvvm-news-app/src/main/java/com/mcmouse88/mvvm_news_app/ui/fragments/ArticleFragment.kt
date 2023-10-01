@@ -22,6 +22,7 @@ class ArticleFragment : Fragment(R.layout.fragment_article) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        _binding = FragmentArticleBinding.bind(view)
         viewModel = (activity as NewsActivity).viewModel
         val article = args.article
         binding.webView.apply {

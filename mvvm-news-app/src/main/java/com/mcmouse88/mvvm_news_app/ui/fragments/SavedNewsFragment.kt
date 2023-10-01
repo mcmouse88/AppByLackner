@@ -26,6 +26,7 @@ class SavedNewsFragment : Fragment(R.layout.fragment_saved_news) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        _binding = FragmentSavedNewsBinding.bind(view)
         viewModel = (activity as NewsActivity).viewModel
         setupRecyclerView()
 

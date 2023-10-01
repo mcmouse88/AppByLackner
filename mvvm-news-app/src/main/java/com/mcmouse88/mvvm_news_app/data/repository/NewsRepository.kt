@@ -6,7 +6,7 @@ import com.mcmouse88.mvvm_news_app.data.local.ArticleDatabase
 import com.mcmouse88.mvvm_news_app.data.remote.RetrofitInstance
 import com.mcmouse88.mvvm_news_app.data.remote.dto.NewsResponseDto
 import com.mcmouse88.mvvm_news_app.ui.models.Article
-import com.mcmouse88.mvvm_news_app.ui.models.toArticleList
+import com.mcmouse88.mvvm_news_app.ui.models.fromEntityToArticleList
 import com.mcmouse88.mvvm_news_app.ui.models.toEntity
 import retrofit2.Response
 
@@ -28,7 +28,7 @@ class NewsRepository(
 
     fun getSavedNews(): LiveData<List<Article>> {
         return database.articleDao.getAllArticles().map {
-            it.toArticleList()
+            it.fromEntityToArticleList()
         }
     }
 

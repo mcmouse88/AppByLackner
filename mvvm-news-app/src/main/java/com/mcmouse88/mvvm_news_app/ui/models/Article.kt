@@ -21,38 +21,38 @@ data class Source(
     val name: String
 )
 
-fun ArticleDto.toArticle(): Article {
+fun ArticleDto?.toArticle(): Article {
     return Article(
-        author = this.author,
-        content = this.content,
-        description = this.description,
-        publishedAt = this.publishedAt,
-        source = Source(this.source.id, this.source.name),
-        title = this.title,
-        url = this.url,
-        urlToImage = this.urlToImage
+        author = this?.author ?: "",
+        content = this?.content ?: "",
+        description = this?.description ?: "",
+        publishedAt = this?.publishedAt ?: "",
+        source = Source(this?.source?.id ?: "", this?.source?.name ?: ""),
+        title = this?.title ?: "",
+        url = this?.url ?: "",
+        urlToImage = this?.urlToImage ?: ""
     )
 }
 
 fun ArticleEntity.toArticle(): Article {
     return Article(
-        author = this.author,
-        content = this.content,
-        description = this.description,
-        publishedAt = this.publishedAt,
-        source = Source(this.source.id, this.source.name),
-        title = this.title,
-        url = this.url,
-        urlToImage = this.urlToImage
+        author = this.author ?: "",
+        content = this.content ?: "",
+        description = this.description ?: "",
+        publishedAt = this.publishedAt ?: "",
+        source = Source(this.source?.id ?: "", this.source?.name ?: ""),
+        title = this.title ?: "",
+        url = this.url ?: "",
+        urlToImage = this.urlToImage ?: ""
     )
 }
 
-fun List<ArticleEntity>.toArticleList(): List<Article> {
+fun List<ArticleEntity>.fromEntityToArticleList(): List<Article> {
     return this.map(ArticleEntity::toArticle)
 }
 
-fun List<ArticleDto>.toArticleList(): List<Article> {
-    return this.map(ArticleDto::toArticle)
+fun List<ArticleDto>?.fromDtoToArticleList(): List<Article> {
+    return this?.map(ArticleDto::toArticle) ?: emptyList()
 }
 
 fun Article.toEntity(): ArticleEntity {

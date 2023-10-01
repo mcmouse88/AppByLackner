@@ -11,20 +11,21 @@ data class ArticleEntity(
     @[PrimaryKey(autoGenerate = true) ColumnInfo("id")]
     val id: Int = 0,
     @ColumnInfo("author")
-    val author: String,
+    val author: String?,
     @ColumnInfo("content")
-    val content: String,
+    val content: String?,
     @ColumnInfo("description")
-    val description: String,
+    val description: String?,
     @ColumnInfo("published_at")
-    val publishedAt: String,
-    val source: SourceType,
+    val publishedAt: String?,
+    @ColumnInfo("source")
+    val source: SourceType?,
     @ColumnInfo("title")
-    val title: String,
+    val title: String?,
     @ColumnInfo("url")
-    val url: String,
+    val url: String?,
     @ColumnInfo("url_to_image")
-    val urlToImage: String
+    val urlToImage: String?
 )
 
 data class SourceType(
