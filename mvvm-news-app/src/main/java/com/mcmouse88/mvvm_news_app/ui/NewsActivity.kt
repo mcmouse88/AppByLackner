@@ -8,7 +8,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.mcmouse88.mvvm_news_app.R
 import com.mcmouse88.mvvm_news_app.data.local.ArticleDatabase
 import com.mcmouse88.mvvm_news_app.databinding.ActivityNewsBinding
-import com.mcmouse88.mvvm_news_app.repository.NewsRepository
+import com.mcmouse88.mvvm_news_app.data.repository.NewsRepository
 
 class NewsActivity : AppCompatActivity() {
 

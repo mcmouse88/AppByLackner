@@ -25,6 +25,6 @@ interface NewsApi {
         @Query("page")
         pageNumber: Int = 1,
         @Query("apiKey")
-        apiKey: String
+        apiKey: String = BuildConfig.API_KEY
     ): Response<NewsResponseDto>
 }
