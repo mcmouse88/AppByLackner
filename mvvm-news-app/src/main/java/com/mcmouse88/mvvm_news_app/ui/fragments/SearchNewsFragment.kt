@@ -3,10 +3,12 @@ package com.mcmouse88.mvvm_news_app.ui.fragments
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.core.os.bundleOf
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mcmouse88.mvvm_news_app.R
 import com.mcmouse88.mvvm_news_app.databinding.FragmentSearchNewsBinding
@@ -37,6 +39,14 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = (activity as NewsActivity).viewModel
         setupRecyclerView()
+
+        newsAdapter.setOnItemClickListener { article ->
+            val bundle = bundleOf("article" to article)
+            findNavController().navigate(
+                R.id.action_searchNewsFragment_to_articleFragment,
+                bundle
+            )
+        }
 
         var job: Job? = null
         binding.etSearch.addTextChangedListener { editable ->
