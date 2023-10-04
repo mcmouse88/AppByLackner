@@ -1,18 +1,25 @@
 package com.mcmouse88.mvvm_news_app.ui
 
+import android.app.Application
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.mcmouse88.mvvm_news_app.NewsApplication
 import com.mcmouse88.mvvm_news_app.data.remote.dto.NewsResponseDto
 import com.mcmouse88.mvvm_news_app.data.repository.NewsRepository
 import com.mcmouse88.mvvm_news_app.ui.models.Article
 import com.mcmouse88.mvvm_news_app.utils.Resource
 import kotlinx.coroutines.launch
+import okio.IOException
 import retrofit2.Response
 
 class NewsViewModel(
-    private val newsRepository: NewsRepository
-) : ViewModel() {
+    private val newsRepository: NewsRepository,
+    app: Application
+) : AndroidViewModel(app) {
 
     val breakingNews = MutableLiveData<Resource<NewsResponseDto>>()
     var breakingNewsPage = 1
@@ -28,17 +35,13 @@ class NewsViewModel(
 
     fun getBreakingNews(countryCode: String) {
         viewModelScope.launch {
-            breakingNews.postValue(Resource.Loading())
-            val response = newsRepository.getBreakingNews(countryCode, breakingNewsPage)
-            breakingNews.postValue(handleBreakingNewsResponse(response))
+            safeBreakingNewsCall(countryCode)
         }
     }
 
     fun searchNews(searchQuery: String) {
         viewModelScope.launch {
-            searchNews.postValue(Resource.Loading())
-            val response = newsRepository.searchNews(searchQuery, searchNewsPage)
-            searchNews.postValue(handleSearchNewsResponse(response))
+            safeSearchNewsCall(searchQuery)
         }
     }
 
@@ -53,6 +56,40 @@ class NewsViewModel(
     fun deleteArticle(article: Article) {
         viewModelScope.launch {
             newsRepository.deleteArticle(article)
+        }
+    }
+
+    private suspend fun safeBreakingNewsCall(countryCode: String) {
+        breakingNews.postValue(Resource.Loading())
+        try {
+            if (hasInternetConnection()) {
+                val response = newsRepository.getBreakingNews(countryCode, breakingNewsPage)
+                breakingNews.postValue(handleBreakingNewsResponse(response))
+            } else {
+                breakingNews.postValue(Resource.Error("No internet connection"))
+            }
+        } catch (throwable: Throwable) {
+            when (throwable) {
+                is IOException -> breakingNews.postValue(Resource.Error("Network failure"))
+                else -> breakingNews.postValue(Resource.Error("Conversion error"))
+            }
+        }
+    }
+
+    private suspend fun safeSearchNewsCall(searchQuery: String) {
+        searchNews.postValue(Resource.Loading())
+        try {
+            if (hasInternetConnection()) {
+                val response = newsRepository.searchNews(searchQuery, breakingNewsPage)
+                searchNews.postValue(handleSearchNewsResponse(response))
+            } else {
+                searchNews.postValue(Resource.Error("No internet connection"))
+            }
+        } catch (throwable: Throwable) {
+            when (throwable) {
+                is IOException -> searchNews.postValue(Resource.Error("Network failure"))
+                else -> searchNews.postValue(Resource.Error("Conversion error"))
+            }
         }
     }
 
@@ -88,5 +125,20 @@ class NewsViewModel(
             }
         }
         return Resource.Error(response.message())
+    }
+
+    private fun hasInternetConnection(): Boolean {
+        val connectivityManager = getApplication<NewsApplication>().getSystemService(
+            Context.CONNECTIVITY_SERVICE
+        ) as ConnectivityManager
+
+        val activeNetwork = connectivityManager.activeNetwork ?: return false
+        val capabilities = connectivityManager.getNetworkCapabilities(activeNetwork) ?: return false
+        return when {
+            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
+            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
+            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) -> true
+            else -> false
+        }
     }
 }

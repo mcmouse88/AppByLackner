@@ -1,9 +1,9 @@
 package com.mcmouse88.mvvm_news_app.ui.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.AbsListView
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
@@ -31,8 +31,6 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
     private var _binding: FragmentSearchNewsBinding? = null
     private val binding: FragmentSearchNewsBinding
         get() = _binding ?: throw NullPointerException("FragmentSearchNewsBinding is null")
-
-    private val TAG = "SearchNewsFragment"
 
     lateinit var viewModel: NewsViewModel
     lateinit var newsAdapter: NewsAdapter
@@ -80,7 +78,7 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
                 is Resource.Error -> {
                     hideProgressBar()
                     resource.message?.let { message ->
-                        Log.e(TAG, "An error occurred: $message")
+                        Toast.makeText(requireContext(), "An error occurred: $message", Toast.LENGTH_LONG).show()
                     }
                 }
                 is Resource.Loading -> {
