@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GraphQLBasic</string>
+    <string name="continent">Continent: %1$s</string>
+    <string name="currency">Currency: %1$s</string>
+    <string name="capital">Capital: %1$s</string>
+    <string name="languages">Language(s): %1$s</string>
+</resources>
