@@ -21,6 +21,7 @@ jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = 
 google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "daggerHiltVersion" }
 google-devtools-ksp = { id = "com.google.devtools.ksp", version = "1.9.10-1.0.13" }
 androidx-navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navVersion" }
+apollographql-apollo3 = { id = "com.apollographql.apollo3", version = "3.7.3" }
 
 [libraries]
 # Core ktx
@@ -51,7 +52,7 @@ androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version = "
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.7.2" }
 
 # Compose Basic
-androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2023.09.01" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2023.10.00" }
 androidx-compose-ui = { module = "androidx.compose.ui:ui" }
 androidx-compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
 androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
@@ -62,8 +63,8 @@ androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 
 # Compose Other
-androidx-compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version = "1.5.1" }
-androidx-compose-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version = "1.5.1" }
+androidx-compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version = "1.5.3" }
+androidx-compose-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version = "1.5.3" }
 
 # Coroutines
 jetbrains-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutinetVersion" }
@@ -74,8 +75,9 @@ jetbrains-kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-co
 google-dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "daggerHiltVersion" }
 google-dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "daggerHiltVersion" }
 google-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "daggerHiltVersion" }
-androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version = "1.0.0" }
 google-dagger-hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "daggerHiltVersion" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version = "1.0.0" }
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version = "1.0.0" }
 
 # Room
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
@@ -106,6 +108,9 @@ androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx",
 
 # Work Manager
 androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version = "2.8.1" }
+
+# GraphQL
+apollo-runtime = { module = "com.apollographql.apollo3:apollo-runtime", version = "3.7.3" }
 
 # Accompanist
 google-accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version = "0.32.0" }
