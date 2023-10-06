@@ -9,6 +9,10 @@ plugins {
 apollo {
     service("service") {
         packageName.set("com.mcmouse88")
+
+        outputDirConnection {
+            connectToKotlinSourceSet("main")
+        }
     }
 }
 
