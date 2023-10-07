@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NotificationsAboveApi33</string>
+    <string name="request_permission">Request Permission</string>
+    <string name="show_notifiaction">Show Notification</string>
+</resources>
