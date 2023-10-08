@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":date-time-api-guide")
+
+
 pluginManagement {
     repositories {
         google()
