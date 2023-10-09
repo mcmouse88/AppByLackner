@@ -9,7 +9,7 @@ coroutinetVersion = "1.7.3"
 daggerHiltVersion = "2.48"
 roomVersion = "2.5.2"
 retrofitVersion = "2.9.0"
-navVersion = "2.7.3"
+navVersion = "2.7.4"
 lifecycleVersion = "2.6.2"
 moshiVersion = "1.15.0"
 glideVersion = "4.15.1"
@@ -46,11 +46,11 @@ androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-lived
 androidx-lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version = "2.2.0" }
 
 # Activity and Fragment ktx
-androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version = "1.7.2" }
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version = "1.8.0" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version = "1.6.1" }
 
 # Activity Compose
-androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.7.2" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.8.0" }
 
 # Compose Basic
 androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2023.10.00" }
@@ -124,6 +124,9 @@ google-accompanist-swiperefresh = { module = "com.google.accompanist:accompanist
 # Moshi
 squareup-moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshiVersion" }
 squareup-moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiVersion" }
+
+# Desugaring
+android-tools-desugar_jdk_libs = { module = "com.android.tools:desugar_jdk_libs", version = "2.0.3" }
 
 # Splash Screen
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version = "1.0.1" }
