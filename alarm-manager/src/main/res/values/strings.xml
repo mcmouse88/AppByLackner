@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlarmManager</string>
+    <string name="trigger_alarm_in_seconds">Trigger alarm in seconds</string>
+    <string name="message">Message</string>
+    <string name="schedule">Schedule</string>
+    <string name="cancel">Cancel</string>
+</resources>

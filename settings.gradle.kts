@@ -40,6 +40,7 @@ include(
     ":local-notification",
     ":notifications-above-api-33",
     ":date-time-api-guide",
-    ":error-handling"
+    ":error-handling",
+    ":alarm-manager"
 )
 
