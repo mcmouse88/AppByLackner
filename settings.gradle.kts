@@ -1,8 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":date-time-api-guide")
-
-
 pluginManagement {
     repositories {
         google()
@@ -15,29 +12,34 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots/")}
+        maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots/") }
     }
 }
 
 rootProject.name = "AppByPhilippLackner"
-include(":intent-and-intent-filter")
-include(":broadcast-and-broadcast-receiver")
-include(":foreground-services")
-include(":work-manager")
-include(":content-providers")
-include(":note-app")
-include(":room-transaction")
-include(":testing-on-android")
-include(":shimmer-effect")
-include(":swipe-refresh")
-include(":image-slider")
-include(":sharing-data-between-screens")
-include(":navigate-back-result")
-include(":multiple-table-database")
-include(":room-guide-full")
-include(":room-migration")
-include(":mvvm-news-app")
-include(":graphql-basic")
-include(":firebase_cloud_messaging")
-include(":local-notification")
-include(":notifications-above-api-33")
+include(
+    ":intent-and-intent-filter",
+    ":broadcast-and-broadcast-receiver",
+    ":foreground-services",
+    ":work-manager",
+    ":content-providers",
+    ":note-app",
+    ":room-transaction",
+    ":testing-on-android",
+    ":shimmer-effect",
+    ":swipe-refresh",
+    ":image-slider",
+    ":sharing-data-between-screens",
+    ":navigate-back-result",
+    ":multiple-table-database",
+    ":room-guide-full",
+    ":room-migration",
+    ":mvvm-news-app",
+    ":graphql-basic",
+    ":firebase_cloud_messaging",
+    ":local-notification",
+    ":notifications-above-api-33",
+    ":date-time-api-guide",
+    ":error-handling"
+)
+
