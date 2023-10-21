@@ -42,6 +42,9 @@ include(
     ":date-time-api-guide",
     ":error-handling",
     ":alarm-manager",
-    ":permissions-handling-guide"
+    ":permissions-handling-guide",
+    ":alarm-manager",
+    ":baseline-profile-macrobenchmark",
+    ":baseline-profile-macrobenchmark:main-app"
 )
 
