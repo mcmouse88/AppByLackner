@@ -41,6 +41,7 @@ include(
     ":notifications-above-api-33",
     ":date-time-api-guide",
     ":error-handling",
-    ":alarm-manager"
+    ":alarm-manager",
+    ":permissions-handling-guide"
 )
 
