@@ -5,4 +5,5 @@ plugins {
     alias(libs.plugins.google.devtools.ksp) apply false
     alias(libs.plugins.androidx.navigation.safeargs.kotlin) apply false
     alias(libs.plugins.google.gms.google.services) apply false
+    alias(libs.plugins.com.android.test) apply false
 }
