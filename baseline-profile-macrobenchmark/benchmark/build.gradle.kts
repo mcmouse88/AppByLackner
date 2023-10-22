@@ -37,6 +37,15 @@ android {
         }
     }
 
+    testOptions.managedDevices.devices {
+        create<com.android.build.api.dsl.ManagedVirtualDevice>("pixel6Api33") {
+            device = "Pixel 6"
+            apiLevel = 33
+            systemImageSource = "aosp"
+        }
+    }
+
+
     targetProjectPath = ":baseline-profile-macrobenchmark:main-app"
     experimentalProperties["android.experimental.self-instrumenting"] = true
 }
