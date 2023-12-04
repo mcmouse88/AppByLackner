@@ -43,6 +43,7 @@ include(
     ":error-handling",
     ":alarm-manager",
     ":permissions-handling-guide",
-    ":text-fields-material3"
+    ":material3-text-fields",
+    ":material3-top-app-bar"
 )
 

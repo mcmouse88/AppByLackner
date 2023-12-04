@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TopAppBarMaterial3</string>
+    <string name="my_notes">My notes</string>
+    <string name="mark_as_favorite">Mark as favorite</string>
+    <string name="edit_note">Edit note</string>
+    <string name="menu">Menu</string>
+</resources>
