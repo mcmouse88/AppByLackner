@@ -42,6 +42,7 @@ include(
     ":date-time-api-guide",
     ":error-handling",
     ":alarm-manager",
-    ":permissions-handling-guide"
+    ":permissions-handling-guide",
+    ":text-fields-material3"
 )
 
