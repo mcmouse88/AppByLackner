@@ -44,6 +44,7 @@ include(
     ":alarm-manager",
     ":permissions-handling-guide",
     ":material3-text-fields",
-    ":material3-top-app-bar"
+    ":material3-top-app-bar",
+    ":material3-bottom-navigation-bar"
 )
 
