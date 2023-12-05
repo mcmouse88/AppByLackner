@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":material3-selection-component")
+
+
 pluginManagement {
     repositories {
         google()
