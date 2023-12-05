@@ -25,13 +25,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.mcmouse88.buttons.ui.theme.ButtonsMaterial3Theme
+import com.mcmouse88.buttons.ui.theme.Material3ButtonsTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ButtonsMaterial3Theme {
+            Material3ButtonsTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

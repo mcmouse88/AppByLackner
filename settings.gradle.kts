@@ -49,6 +49,8 @@ include(
     ":material3:bottom-navigation-bar",
     ":material3:selection-component",
     ":material3:tab-row",
-    ":material3:buttons"
+    ":material3:tab-row",
+    ":material3:buttons",
+    ":material3:bottom-sheet"
 )
 

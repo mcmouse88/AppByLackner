@@ -1,4 +1,4 @@
-package com.mcmouse88.buttons.ui.theme
+package com.mcmouse88.bottomsheet.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -38,7 +38,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun Material3ButtonsTheme(
+fun Material3BottomSheetTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
