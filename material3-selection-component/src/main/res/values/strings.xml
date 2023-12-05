@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Material3SelectionComponent</string>
+    <string name="file_types">File Types</string>
+    <string name="dark_mode">Dark Mode</string>
+</resources>
