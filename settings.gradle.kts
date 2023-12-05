@@ -1,8 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":material3-selection-component")
-
-
 pluginManagement {
     repositories {
         google()
@@ -46,8 +43,11 @@ include(
     ":error-handling",
     ":alarm-manager",
     ":permissions-handling-guide",
-    ":material3-text-fields",
-    ":material3-top-app-bar",
-    ":material3-bottom-navigation-bar"
+    ":material3",
+    ":material3:text-fields",
+    ":material3:top-app-bar",
+    ":material3:bottom-navigation-bar",
+    ":material3:selection-component",
+    ":material3:tab-row"
 )
 
