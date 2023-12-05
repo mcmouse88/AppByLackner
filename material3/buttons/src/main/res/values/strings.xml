@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Buttons</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="back">Back</string>
+    <string name="learn_more">Learn more</string>
+</resources>
