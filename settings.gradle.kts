@@ -51,6 +51,7 @@ include(
     ":material3:tab-row",
     ":material3:tab-row",
     ":material3:buttons",
-    ":material3:bottom-sheet"
+    ":material3:bottom-sheet",
+    ":material3:navigation-drawer"
 )
 
