@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BottomSheet</string>
+    <string name="open_modal_sheet">Open modal sheet</string>
+    <string name="open_scaffold_sheet">Open scaffold sheet</string>
+</resources>
