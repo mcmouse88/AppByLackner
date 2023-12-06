@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NavigationDrawer</string>
+    <string name="all">All</string>
+    <string name="urgent">Urgent</string>
+    <string name="settings">Settings</string>
+    <string name="todo_app">Todo App</string>
+    <string name="menu">Menu</string>
+</resources>
