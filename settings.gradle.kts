@@ -32,6 +32,8 @@ include(
     ":notification:notifications-above-api-33",
     ":notification:local-notification",
     ":notification:alarm-manager",
+    ":compose-lists",
+    ":compose-lists:lazy-grid-full-guide",
     ":work-manager",
     ":note-app",
     ":navigation",
