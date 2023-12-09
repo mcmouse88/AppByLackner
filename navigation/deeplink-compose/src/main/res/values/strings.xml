@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DeepLinkCompose</string>
+    <string name="to_detail">To Detail</string>
+    <string name="the_id_is">The id is %1$s</string>
+</resources>

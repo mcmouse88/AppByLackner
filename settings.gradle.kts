@@ -44,6 +44,7 @@ include(
     ":navigation",
     ":navigation:navigate-back-result",
     ":navigation:nested-graph-compose",
+    ":navigation:deeplink-compose",
     ":testing-on-android",
     ":sharing-data-between-screens",
     ":mvvm-news-app",
