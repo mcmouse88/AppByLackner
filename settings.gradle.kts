@@ -43,6 +43,7 @@ include(
     ":note-app",
     ":navigation",
     ":navigation:navigate-back-result",
+    ":navigation:nested-graph-compose",
     ":testing-on-android",
     ":sharing-data-between-screens",
     ":mvvm-news-app",
