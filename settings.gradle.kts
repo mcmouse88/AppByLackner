@@ -63,6 +63,7 @@ include(
     ":material3:buttons",
     ":material3:bottom-sheet",
     ":material3:navigation-drawer",
-    ":material3:navigation-rail"
+    ":material3:navigation-rail",
+    ":zoom-gestures-compose"
 )
 
