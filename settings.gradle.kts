@@ -39,6 +39,7 @@ include(
     ":widgets:swipe-refresh",
     ":widgets:shimmer-effect",
     ":widgets:image-slider",
+    ":widgets:search-field-compose",
     ":work-manager",
     ":note-app",
     ":navigation",
