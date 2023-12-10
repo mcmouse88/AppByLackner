@@ -34,6 +34,7 @@ include(
     ":notification:alarm-manager",
     ":compose-lists",
     ":compose-lists:lazy-grid-full-guide",
+    ":compose-lists:lazy-staggered-grid",
     ":widgets",
     ":widgets:context-drop-down-menu",
     ":widgets:swipe-refresh",
