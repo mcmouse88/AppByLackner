@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AnimationCompose</string>
+    <string name="transition">Transition</string>
+    <string name="round">Round</string>
+</resources>

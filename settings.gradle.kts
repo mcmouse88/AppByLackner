@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":animation-compose")
+
+
 pluginManagement {
     repositories {
         google()
