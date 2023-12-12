@@ -1,8 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":animation-compose")
-
-
 pluginManagement {
     repositories {
         google()
@@ -44,7 +41,9 @@ include(
     ":widgets:shimmer-effect",
     ":widgets:image-slider",
     ":widgets:search-field-compose",
-    ":work-manager",
+    ":work-manager-pack",
+    ":work-manager-pack:work-manager-guide",
+    "work-manager-pack:work-manager",
     ":note-app",
     ":navigation",
     ":navigation:navigate-back-result",
@@ -68,6 +67,7 @@ include(
     ":material3:bottom-sheet",
     ":material3:navigation-drawer",
     ":material3:navigation-rail",
-    ":zoom-gestures-compose"
+    ":zoom-gestures-compose",
+    ":animation-compose"
 )
 
