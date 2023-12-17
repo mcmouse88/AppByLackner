@@ -32,6 +32,7 @@ include(
     ":notification:notifications-above-api-33",
     ":notification:local-notification",
     ":notification:alarm-manager",
+    ":notification:firebase_cloud_messaging",
     ":compose-lists",
     ":compose-lists:lazy-grid-full-guide",
     ":compose-lists:lazy-staggered-grid",
@@ -53,7 +54,6 @@ include(
     ":sharing-data-between-screens",
     ":mvvm-news-app",
     ":graphql-basic",
-    ":firebase_cloud_messaging",
     ":date-time-api-guide",
     ":error-handling",
     ":permissions-handling-guide",
@@ -68,6 +68,7 @@ include(
     ":material3:navigation-drawer",
     ":material3:navigation-rail",
     ":zoom-gestures-compose",
-    ":animation-compose"
+    ":animation-compose",
+    ":calculator"
 )
 
