@@ -69,6 +69,7 @@ include(
     ":material3:navigation-rail",
     ":zoom-gestures-compose",
     ":animation-compose",
-    ":calculator"
+    ":calculator",
+    ":stock-market-app"
 )
 
