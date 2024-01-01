@@ -42,6 +42,7 @@ include(
     ":widgets:shimmer-effect",
     ":widgets:image-slider",
     ":widgets:search-field-compose",
+    ":widgets:custom-compose-layout",
     ":work-manager-pack",
     ":work-manager-pack:work-manager-guide",
     "work-manager-pack:work-manager",
