@@ -1,0 +1,9 @@
+package com.mcmouse88.koin_guide
+
+import retrofit2.http.GET
+
+interface MyApi {
+
+    @GET("my/endpoint")
+    fun callApi()
+}
