@@ -72,6 +72,7 @@ include(
     ":zoom-gestures-compose",
     ":animation-compose",
     ":calculator",
-    ":custom-pagination"
+    ":custom-pagination",
+    ":koin-guide"
 )
 
