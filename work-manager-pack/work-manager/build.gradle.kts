@@ -65,6 +65,6 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
     implementation(libs.androidx.work.runtime.ktx)
-    implementation(libs.io.coil.kt.compose)
+    implementation(libs.coil.kt.compose)
     implementation(libs.androidx.compose.runtime.livedata)
 }

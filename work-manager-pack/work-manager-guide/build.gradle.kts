@@ -72,7 +72,7 @@ dependencies {
     implementation(libs.androidx.compose.runtime.livedata)
 
     // Coil
-    implementation(libs.io.coil.kt.compose)
+    implementation(libs.coil.kt.compose)
 
     // WorkManager with Coroutines
     implementation(libs.androidx.work.runtime.ktx)
