@@ -73,6 +73,7 @@ include(
     ":animation-compose",
     ":calculator",
     ":custom-pagination",
-    ":koin-guide"
+    ":koin-guide",
+    ":shortcuts"
 )
 
