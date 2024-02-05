@@ -69,6 +69,7 @@ include(
     ":material3:bottom-sheet",
     ":material3:navigation-drawer",
     ":material3:navigation-rail",
+    ":material3:swipe-to-delete",
     ":zoom-gestures-compose",
     ":animation-compose",
     ":calculator",
