@@ -1,8 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":notification:firebase-push-fcm:server")
-
-
 pluginManagement {
     repositories {
         google()
@@ -37,6 +34,7 @@ include(
     ":notification:alarm-manager",
     ":notification:firebase_cloud_messaging",
     ":notification:firebase-push-fcm",
+    ":notification:firebase-push-fcm:server",
     ":compose-lists",
     ":compose-lists:lazy-grid-full-guide",
     ":compose-lists:lazy-staggered-grid",
@@ -74,6 +72,7 @@ include(
     ":material3:navigation-drawer",
     ":material3:navigation-rail",
     ":material3:swipe-to-delete",
+    ":material3:basic-text-field-2",
     ":zoom-gestures-compose",
     ":animation-compose",
     ":calculator",
