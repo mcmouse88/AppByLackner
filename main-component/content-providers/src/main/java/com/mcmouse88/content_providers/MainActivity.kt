@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
@@ -34,6 +35,12 @@ class MainActivity : ComponentActivity() {
                 this,
                 arrayOf(Manifest.permission.READ_MEDIA_IMAGES),
                 0
+            )
+        } else {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
+                1
             )
         }
 
@@ -73,6 +80,7 @@ class MainActivity : ComponentActivity() {
             viewModel.updateImages(images)
         }
         setContent {
+            Log.e("TAG_CHECK", "onCreate: ${viewModel.images.size}")
             ContentProvidersTheme {
                 LazyColumn(
                     modifier = Modifier.fillMaxSize()

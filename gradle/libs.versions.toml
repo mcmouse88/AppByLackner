@@ -16,6 +16,7 @@ glideVersion = "4.15.1"
 espressoVersion = "3.5.1"
 koinVersion = "3.5.0"
 okHttpVersion = "4.12.0"
+org-jetbrains-kotlin-jvm = "1.9.10"
 
 [plugins]
 android-application = { id = "com.android.application", version = "8.1.1" }
@@ -25,6 +26,7 @@ google-devtools-ksp = { id = "com.google.devtools.ksp", version = "1.9.10-1.0.13
 androidx-navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navVersion" }
 apollographql-apollo3 = { id = "com.apollographql.apollo3", version = "3.7.3" }
 google-gms-google-services = { id = "com.google.gms.google-services", version = "4.4.0" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
 
 [libraries]
 # Core ktx
@@ -123,7 +125,7 @@ androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx",
 androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version = "2.8.1" }
 
 # Firebase
-google-firebase-bom = { module = "com.google.firebase:firebase-bom", version = "32.3.1" }
+google-firebase-bom = { module = "com.google.firebase:firebase-bom", version = "32.7.1" }
 google-firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx" }
 
 # GraphQL
