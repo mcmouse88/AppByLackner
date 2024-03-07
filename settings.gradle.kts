@@ -78,6 +78,7 @@ include(
     ":calculator",
     ":custom-pagination",
     ":koin-guide",
-    ":shortcuts"
+    ":shortcuts",
+    ":custom-shape"
 )
 
