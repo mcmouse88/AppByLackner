@@ -79,6 +79,7 @@ include(
     ":custom-pagination",
     ":koin-guide",
     ":shortcuts",
-    ":custom-shape"
+    ":custom-shape",
+    ":camera-x"
 )
 
