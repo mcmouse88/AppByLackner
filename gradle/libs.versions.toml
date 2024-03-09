@@ -17,6 +17,7 @@ espressoVersion = "3.5.1"
 koinVersion = "3.5.0"
 okHttpVersion = "4.12.0"
 org-jetbrains-kotlin-jvm = "1.9.10"
+cameraVersion = "1.3.2"
 
 [plugins]
 android-application = { id = "com.android.application", version = "8.1.1" }
@@ -123,6 +124,13 @@ androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx",
 
 # Work Manager
 androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version = "2.8.1" }
+
+# Camera X
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraVersion" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraVersion" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraVersion" }
+androidx-camera-video = { module = "androidx.camera:camera-video", version.ref = "cameraVersion" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraVersion" }
 
 # Firebase
 google-firebase-bom = { module = "com.google.firebase:firebase-bom", version = "32.7.1" }
