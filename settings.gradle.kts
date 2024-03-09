@@ -80,6 +80,8 @@ include(
     ":koin-guide",
     ":shortcuts",
     ":custom-shape",
-    ":camera-x"
+    ":camera",
+    ":camera:camera-x",
+    ":camera:tensor-flow-landmark"
 )
 
