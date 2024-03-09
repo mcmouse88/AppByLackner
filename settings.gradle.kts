@@ -82,6 +82,8 @@ include(
     ":custom-shape",
     ":camera",
     ":camera:camera-x",
-    ":camera:tensor-flow-landmark"
+    ":camera:tensor-flow-landmark",
+    ":audio",
+    ":audio:record-and-play-audio"
 )
 
