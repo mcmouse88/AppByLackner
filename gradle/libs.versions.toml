@@ -131,6 +131,12 @@ androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.r
 androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraVersion" }
 androidx-camera-video = { module = "androidx.camera:camera-video", version.ref = "cameraVersion" }
 androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraVersion" }
+androidx-camera-extensions = { module = "androidx.camera:camera-extensions", version.ref = "cameraVersion" }
+
+# Tensor Flow
+tensorflow-lite-task-vision = { module = "org.tensorflow:tensorflow-lite-task-vision", version = "0.4.0" }
+tensorflow-lite-task-gpu-delegate-plugin = { module = "org.tensorflow:tensorflow-lite-gpu-delegate-plugin", version = "0.4.0" }
+tensorflow-lite-task-gpu = { module = "org.tensorflow:tensorflow-lite-gpu", version = "2.9.0" }
 
 # Firebase
 google-firebase-bom = { module = "com.google.firebase:firebase-bom", version = "32.7.1" }
