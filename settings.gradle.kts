@@ -84,6 +84,7 @@ include(
     ":camera:camera-x",
     ":camera:tensor-flow-landmark",
     ":audio",
-    ":audio:record-and-play-audio"
+    ":audio:record-and-play-audio",
+    ":custom-modifier"
 )
 
