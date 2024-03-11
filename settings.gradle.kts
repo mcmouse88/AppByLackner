@@ -85,6 +85,7 @@ include(
     ":camera:tensor-flow-landmark",
     ":audio",
     ":audio:record-and-play-audio",
-    ":custom-modifier"
+    ":custom-modifier",
+    ":auto-scale-text"
 )
 
