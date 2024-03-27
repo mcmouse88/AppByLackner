@@ -84,8 +84,8 @@ google-dagger-hilt-android = { module = "com.google.dagger:hilt-android", versio
 google-dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "daggerHiltVersion" }
 google-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "daggerHiltVersion" }
 google-dagger-hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "daggerHiltVersion" }
-androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version = "1.0.0" }
-androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version = "1.0.0" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version = "1.2.0" }
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version = "1.2.0" }
 
 # Koin
 insert-koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koinVersion" }

@@ -46,6 +46,7 @@ class PhotoCompressionWorker(
                     KEY_RESULT_PATH to file.absolutePath
                 )
             )
+            Result.retry()
         }
     }
 

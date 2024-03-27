@@ -86,6 +86,7 @@ include(
     ":audio",
     ":audio:record-and-play-audio",
     ":custom-modifier",
-    ":auto-scale-text"
+    ":auto-scale-text",
+    ":bluetooth-chat"
 )
 
