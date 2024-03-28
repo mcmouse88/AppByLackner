@@ -6,4 +6,5 @@ plugins {
     alias(libs.plugins.androidx.navigation.safeargs.kotlin) apply false
     alias(libs.plugins.google.gms.google.services) apply false
     alias(libs.plugins.org.jetbrains.kotlin.jvm) apply false
+    alias(libs.plugins.jetbrains.kotlin.serialization) apply false
 }

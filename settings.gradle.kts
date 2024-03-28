@@ -87,6 +87,7 @@ include(
     ":audio:record-and-play-audio",
     ":custom-modifier",
     ":auto-scale-text",
-    ":video-player"
+    ":video-player",
+    ":encryption"
 )
 
