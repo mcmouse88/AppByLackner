@@ -34,13 +34,13 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         val uri = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            intent?.getParcelableExtra(Intent.EXTRA_STREAM, Uri::class.java)
+            intent.getParcelableExtra(Intent.EXTRA_STREAM, Uri::class.java)
         } else {
             @Suppress("DEPRECATION")
-            intent?.getParcelableExtra(Intent.EXTRA_STREAM)
+            intent.getParcelableExtra(Intent.EXTRA_STREAM)
         }
         viewModel.updateUri(uri)
     }
