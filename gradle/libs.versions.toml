@@ -174,6 +174,9 @@ androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", versi
 # Timber
 jakewharton-timber = { module = "com.jakewharton.timber:timber", version = "5.0.1" }
 
+# Biometric
+androidx-biometric = { module = "androidx.biometric:biometric", version = "1.1.0" }
+
 #-----------------------------------------------TEST-----------------------------------------------#
 
 # JUnit

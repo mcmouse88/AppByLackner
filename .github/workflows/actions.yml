@@ -34,7 +34,7 @@ jobs:
           chmod +x .github/workflows/setup_env.sh
           .github/workflows/setup_env.sh
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.gradle/caches
@@ -55,14 +55,14 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Load API Token from secrets
         run: |
           chmod +x .github/workflows/setup_env.sh
           .github/workflows/setup_env.sh
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.gradle/caches
@@ -85,14 +85,14 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Load API Token from secrets
         run: |
           chmod +x .github/workflows/setup_env.sh
           .github/workflows/setup_env.sh
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.gradle/caches
