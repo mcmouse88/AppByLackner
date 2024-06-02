@@ -89,6 +89,7 @@ include(
     ":custom-modifier",
     ":auto-scale-text",
     ":video-player",
-    ":encryption"
+    ":encryption",
+    ":biometric-auth"
 )
 

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BiometricAuth</string>
+    <string name="cancel">Cancel</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="sample_prompt">Sample prompt</string>
+    <string name="sample_prompt_description">Sample prompt description</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="authentication_not_set">Authentication not set</string>
+    <string name="authentication_success">Authentication success</string>
+    <string name="feature_unavailable">Feature unavailable</string>
+    <string name="hardware_unavailable">Hardware unavailable</string>
+</resources>
