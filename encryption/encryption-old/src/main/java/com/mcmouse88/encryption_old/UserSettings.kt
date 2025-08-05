@@ -1,4 +1,4 @@
-package com.mcmouse88.encryption
+package com.mcmouse88.encryption_old
 
 import kotlinx.serialization.Serializable
 

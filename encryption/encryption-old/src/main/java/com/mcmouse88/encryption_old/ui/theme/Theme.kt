@@ -1,4 +1,4 @@
-package com.mcmouse88.encryption.ui.theme
+package com.mcmouse88.encryption_old.ui.theme
 
 import android.app.Activity
 import android.os.Build

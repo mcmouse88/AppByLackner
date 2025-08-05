@@ -1,4 +1,4 @@
-package com.mcmouse88.encryption
+package com.mcmouse88.encryption_old
 
 import android.content.Context
 import android.os.Bundle
@@ -23,7 +23,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.datastore.dataStore
-import com.mcmouse88.encryption.ui.theme.EncryptionTheme
+import com.mcmouse88.encryption_old.ui.theme.EncryptionTheme
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import java.io.File

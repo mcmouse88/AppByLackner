@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mcmouse88.encryption"
+    namespace = "com.mcmouse88.encryption_old"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.mcmouse88.encryption"
+        applicationId = "com.mcmouse88.encryption_old"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
